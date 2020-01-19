@@ -1,0 +1,13 @@
+D:\YinsuoWms\Rxsoft_erp\bin\Debug\Rxsoft_erp.exe
+D:\YinsuoWms\Rxsoft_erp\bin\Debug\Rxsoft_erp.pdb
+D:\YinsuoWms\Rxsoft_erp\obj\Debug\Rxsoft_erp.csprojResolveAssemblyReference.cache
+D:\YinsuoWms\Rxsoft_erp\obj\Debug\Rxsoft_erp.Form1.resources
+D:\YinsuoWms\Rxsoft_erp\obj\Debug\Rxsoft_erp.Properties.Resources.resources
+D:\YinsuoWms\Rxsoft_erp\obj\Debug\Rxsoft_erp.csproj.GenerateResource.Cache
+D:\YinsuoWms\Rxsoft_erp\obj\Debug\Rxsoft_erp.exe.licenses
+D:\YinsuoWms\Rxsoft_erp\obj\Debug\Rxsoft_erp.exe
+D:\YinsuoWms\Rxsoft_erp\obj\Debug\Rxsoft_erp.pdb
+D:\YinsuoWms\Rxsoft_erp\bin\Debug\Rxsoft_erp.exe.config
+D:\rxsoft_erp_front\Rxsoft_erp\bin\Debug\Rxsoft_erp.exe.config
+D:\rxsoft_erp_front\Rxsoft_erp\obj\Debug\Rxsoft_erp.exe
+D:\rxsoft_erp_front\Rxsoft_erp\obj\Debug\Rxsoft_erp.pdb
