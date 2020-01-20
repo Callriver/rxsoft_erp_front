@@ -1,4 +1,5 @@
-﻿using System;
+﻿using DevExpress.XtraEditors;
+using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
@@ -20,27 +21,38 @@ namespace Rxsoft_erp.utils
         public static string HttpApi(string url, string parameters, string type)
        {
            Encoding encoding = Encoding.ASCII;
-           HttpWebRequest request = (HttpWebRequest)WebRequest.Create(url);//webrequest请求api地址
-           request.Accept = "text/html,application/xhtml+xml,*/*";
+           HttpWebRequest request = (HttpWebRequest)WebRequest.Create(url);//webrequest请求api地址
+           request.Accept = "text/html,application/xhtml+xml,*/*";
            //参数类型
            request.ContentType = "application/x-www-form-urlencoded";
-           byte[] buffer = encoding.GetBytes(parameters);
+           //解决因为URL协议问题导致的+号消失
+           byte[] buffer = encoding.GetBytes(parameters.Replace("+", "%2B"));
            //参数数据长度
            request.ContentLength = buffer.Length;
-           request.Method = type.ToUpper().ToString();//get或者post
+           request.Method = type.ToUpper().ToString();//get或者post
            //设置超时时间
            request.Timeout = 20000;
-           //将参数写入请求地址中
-           request.GetRequestStream().Write(buffer, 0, buffer.Length);
-           //发送请求
-           HttpWebResponse response = (HttpWebResponse)request.GetResponse();
-           //读取返回数据
-           StreamReader streamReader = new StreamReader(response.GetResponseStream(), Encoding.UTF8);
-           string responseContent = streamReader.ReadToEnd();
-           streamReader.Close();
-           response.Close();
-           request.Abort();
-           return responseContent;
+           HttpWebResponse response;
+           string responseContent = "";
+           try
+           {
+               //将参数写入请求地址中
+               request.GetRequestStream().Write(buffer, 0, buffer.Length);
+
+               //发送请求
+               response = (HttpWebResponse)request.GetResponse();
+               //读取返回数据
+               StreamReader streamReader = new StreamReader(response.GetResponseStream(), Encoding.UTF8);
+               responseContent = streamReader.ReadToEnd();
+               streamReader.Close();
+               response.Close();
+               request.Abort();
+           }
+           catch (Exception e)
+           {
+               XtraMessageBox.Show(e.Message, "error");
+           }
+           return responseContent; 
        }
        //组装请求参数
         private static string BuildQuery(IDictionary<string, string> parameters, string encode)

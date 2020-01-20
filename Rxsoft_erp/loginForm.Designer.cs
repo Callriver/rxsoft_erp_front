@@ -1,6 +1,6 @@
 ﻿namespace Rxsoft_erp
 {
-    partial class Form1
+    partial class loginForm
     {
         /// <summary>
         /// Required designer variable.
@@ -66,8 +66,10 @@
             this.textEdit2.Name = "textEdit2";
             this.textEdit2.Properties.Appearance.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textEdit2.Properties.Appearance.Options.UseFont = true;
+            this.textEdit2.Properties.PasswordChar = '*';
             this.textEdit2.Size = new System.Drawing.Size(133, 24);
             this.textEdit2.TabIndex = 11;
+            this.textEdit2.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textEdit2_KeyPress);
             // 
             // textEdit1
             // 
@@ -107,7 +109,7 @@
             this.simpleButton1.Text = "登录";
             this.simpleButton1.Click += new System.EventHandler(this.simpleButton1_Click);
             // 
-            // Form1
+            // loginForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 14F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -124,7 +126,7 @@
             this.LookAndFeel.SkinName = "Office 2010 Blue";
             this.LookAndFeel.UseDefaultLookAndFeel = false;
             this.MaximizeBox = false;
-            this.Name = "Form1";
+            this.Name = "loginForm";
             this.Text = "银锁批发管理系统";
             ((System.ComponentModel.ISupportInitialize)(this.checkEdit1.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.textEdit2.Properties)).EndInit();

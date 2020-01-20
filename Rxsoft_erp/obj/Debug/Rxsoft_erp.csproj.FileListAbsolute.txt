@@ -11,3 +11,10 @@ D:\YinsuoWms\Rxsoft_erp\bin\Debug\Rxsoft_erp.exe.config
 D:\rxsoft_erp_front\Rxsoft_erp\bin\Debug\Rxsoft_erp.exe.config
 D:\rxsoft_erp_front\Rxsoft_erp\obj\Debug\Rxsoft_erp.exe
 D:\rxsoft_erp_front\Rxsoft_erp\obj\Debug\Rxsoft_erp.pdb
+D:\rxsoft_erp_front\Rxsoft_erp\bin\Debug\Rxsoft_erp.exe
+D:\rxsoft_erp_front\Rxsoft_erp\bin\Debug\Rxsoft_erp.pdb
+D:\rxsoft_erp_front\Rxsoft_erp\obj\Debug\Rxsoft_erp.csprojResolveAssemblyReference.cache
+D:\rxsoft_erp_front\Rxsoft_erp\obj\Debug\Rxsoft_erp.Properties.Resources.resources
+D:\rxsoft_erp_front\Rxsoft_erp\obj\Debug\Rxsoft_erp.csproj.GenerateResource.Cache
+D:\rxsoft_erp_front\Rxsoft_erp\obj\Debug\Rxsoft_erp.exe.licenses
+D:\rxsoft_erp_front\Rxsoft_erp\obj\Debug\Rxsoft_erp.loginForm.resources
